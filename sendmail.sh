@@ -17,9 +17,11 @@ then
 	echo "$results" | grep "sent" -q;
 	if [ $? -ne 0 ]; then
 		echo "An error occured: $results";
+		exit 2;
 	fi
 else
 echo "$0 requires 3 arguments - to address, subject, content";
 echo "Example: ./$0 \"to-address@mail-address.com\" \"test\" \"hello this is a test message\""
+exit 1;
 fi
 
