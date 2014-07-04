@@ -6,3 +6,4 @@ dependencies: curl
 - Please edit the creditials in the script before using
 - Takes 3 parameters in quotes: send to address, subject, contents
 - Make sure you have DKIM and SPF setup correctly with your sending domain
+- \n is used to separate lines in your message
